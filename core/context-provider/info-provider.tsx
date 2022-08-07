@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import { InfoContext } from "./info-context"
 
-interface TellUsPageProps {
-}
-
-export const InfoProvider: React.FC<TellUsPageProps> = (props) => {
+export const InfoProvider: React.FC = (props) => {
   const [name, setName] = useState("");
   const [age, setAge] = useState(0);
   const [country, setCountry] = useState("Hong Kong");
